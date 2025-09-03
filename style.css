@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+input{
+    color: black;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    display: flex;
+    text-align: right;
+    padding-bottom: 50px;
+    border-bottom: 1px solid black;
+}
+
+.digits{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.digits button{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+}
+
+.digits button:hover {
+    background-color: grey;
+}
+
+.operators{
+    background-color: orange;
+    color: white;
+}
