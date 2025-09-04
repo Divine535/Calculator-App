@@ -12,32 +12,29 @@
 
     <!--Digits-->
     <div class="digits">
-      <button onclick="appendToDisplay('9')">9</button>
-      <button onclick="appendToDisplay('8')">8</button>
-      <button onclick="appendToDisplay('7')">7</button>
-      <button onclick="Delete('')" class="operators">Del</button>
-      <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="applyPercent()" class="operators">%</button>
+        <button onclick="clearDisplay()" class="operators">AC</button>
+        <button onclick="togglePlusMinus()" class="operators">+/-</button>
+        <button onclick="reciprocal()" class="operators">1/x</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="square()" class="operators">SQR(X)</button>
+        <button onclick="appendToDisplay('6')">6</button>
       <button onclick="appendToDisplay('5')">5</button>
       <button onclick="appendToDisplay('4')">4</button>
-      <button onclick="appendToDisplay('/') " class="operators">/</button>
+      <button onclick="Delete('')" class="operators">Del</button>
       <button onclick="appendToDisplay('3')">3</button>
       <button onclick="appendToDisplay('2')">2</button>
       <button onclick="appendToDisplay('1')">1</button>
-      <button onclick="appendToDisplay('*')" class="operators">x</button>
+      <button onclick="appendToDisplay('/') " class="operators">/</button>
       <button onclick="appendToDisplay('0')">0</button>
       <button onclick="appendToDisplay('.')">.</button>
       <button onclick="appendToDisplay('+')">+</button>
-      <button onclick="Calculate()" class="operators">=</button>
+      <button onclick="appendToDisplay('*')" class="operators">x</button>
       <button onclick="appendToDisplay('-')">-</button>
-      <button onclick="clearDisplay()">CLR</button>
-
-      <!-- Special buttons wired to new functions -->
-      <button onclick="applyPercent()">%</button>
-      <button onclick="togglePlusMinus()">+/-</button>
-      <button onclick="reciprocal()">1/x</button>
-      <button onclick="square()">SQR(X)</button>
+      <button onclick="Calculate()" class="special">=</button>
     </div>
-    <p></p>
   </div>
 
   <script src="script.js"></script>

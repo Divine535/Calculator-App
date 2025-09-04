@@ -52,3 +52,7 @@ input{
     background-color: orange;
     color: white;
 }
+
+.special {
+    background-color: blue;
+}
